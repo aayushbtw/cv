@@ -1,7 +1,13 @@
+import { CertificationsSection } from "@/components/cv/certifications-section";
+import { EducationSection } from "@/components/cv/education-section";
+import { ProjectsSection } from "@/components/cv/projects-section";
+import { SkillsSection } from "@/components/cv/skills-section";
+import { WorkExperienceSection } from "@/components/cv/work-experience-section";
+
 const workExp = {
   title: "Work Experience",
   body: {
-    component: "workExp",
+    Component: WorkExperienceSection,
     content: [
       {
         workplace: "Netision Technology LLP",
@@ -61,7 +67,7 @@ const workExp = {
 const skills = {
   title: "Skills",
   body: {
-    component: "skills",
+    Component: SkillsSection,
     content: [
       {
         title: "Languages",
@@ -88,7 +94,7 @@ const skills = {
 const education = {
   title: "Education",
   body: {
-    component: "education",
+    Component: EducationSection,
     content: [
       {
         title: "Bennett University",
@@ -112,7 +118,7 @@ const education = {
 const projects = {
   title: "Projects",
   body: {
-    component: "projects",
+    Component: ProjectsSection,
     content: [
       {
         title: "Subscription Management System",
@@ -149,7 +155,7 @@ const projects = {
 const certifications = {
   title: "Certifications",
   body: {
-    component: "certifications",
+    Component: CertificationsSection,
     content: [
       {
         title: "Zoho Creator Certified Developer — Associate",

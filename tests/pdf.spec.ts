@@ -1,15 +1,10 @@
 import { test } from "@playwright/test";
 
-test("generate resume PDF", async ({ page }) => {
-  // Navigate to your resume page
+test("Generate CV PDF", async ({ page }) => {
   await page.goto("/");
-
-  // Wait for the page to be fully loaded
   await page.waitForLoadState("networkidle");
-
-  // Generate PDF with A4 format and no margins
   await page.pdf({
-    path: "public/resume.pdf",
+    path: "public/cv.pdf",
     format: "A4",
     printBackground: true,
     margin: {
@@ -20,5 +15,5 @@ test("generate resume PDF", async ({ page }) => {
     },
   });
 
-  console.log("PDF generated successfully: public/resume.pdf");
+  console.log("CV PDF generated: public/cv.pdf");
 });
