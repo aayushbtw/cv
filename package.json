@@ -10,7 +10,7 @@
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
-    "gen": "playwright test tests/generate-pdf.spec.ts --project=chromium"
+    "gen": "playwright test tests/pdf.spec.ts"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.14.4",
