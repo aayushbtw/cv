@@ -12,7 +12,7 @@ export function EducationSection({
   return (
     <CardContent className="gap-xs">
       {content.map((c) => (
-        <Timeline date={c.date} key={c.title}>
+        <Timeline className="text-sm" date={c.date} key={c.title}>
           {c.title}
         </Timeline>
       ))}

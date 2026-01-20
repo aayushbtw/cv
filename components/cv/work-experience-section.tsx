@@ -31,20 +31,24 @@ export function WorkExperienceSection({
               <li className="break-inside-avoid" key={p.name}>
                 <div className="flex flex-col gap-xs">
                   <div>
-                    <h6 className="font-medium">{p.name}</h6>
-                    <p className="max-w-11/12">{p.description}</p>
+                    <h6 className="font-medium text-fg-2">{p.name}</h6>
+                    <p className="max-w-11/12 font-paragraph text-sm">
+                      {p.description}
+                    </p>
                   </div>
-                  <ul className="flex flex-col gap-xs">
+
+                  <ul className="flex flex-col gap-xs font-paragraph">
                     {p.points.map((point) => (
                       <li
-                        className="flex max-w-11/12 items-baseline gap-2"
+                        className="flex max-w-11/12 items-baseline gap-2 text-sm"
                         key={point}
                       >
-                        <IconArrowRight className="size-4.5 shrink-0 translate-y-0.5 text-fg-3" />
+                        <IconArrowRight className="size-4.5 shrink-0 translate-y-0.5 text-fg-2" />
                         <span>{point}</span>
                       </li>
                     ))}
                   </ul>
+
                   <ul className="flex gap-sm">
                     {p.stack.map((s) => (
                       <li key={s}>

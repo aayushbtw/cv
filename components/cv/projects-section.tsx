@@ -20,7 +20,9 @@ export function ProjectsSection({
             <div className="flex flex-col gap-xs">
               <div>
                 <Timeline date={c.date}>{c.title}</Timeline>
-                <p className="max-w-11/12">{c.description}</p>
+                <p className="max-w-11/12 font-paragraph text-sm">
+                  {c.description}
+                </p>
               </div>
 
               <ul className="flex gap-sm">

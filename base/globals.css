@@ -2,6 +2,8 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
+  --font-paragraph: var(--font-paragraph);
+
   --color-bg-1: var(--color-white);
   --color-bg-2: var(--color-gray-100);
 

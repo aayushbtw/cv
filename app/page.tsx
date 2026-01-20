@@ -10,7 +10,7 @@ import { socials } from "@/site/socials";
 
 export default function Page() {
   return (
-    <div className="flex w-full flex-col gap-lg">
+    <div className="flex w-full flex-col gap-md">
       <header className="flex flex-col gap-xs text-fg-1">
         <h1 className="text-4xl tracking-[0.06em]">
           <span className="font-semibold">{cv.firstName}</span>{" "}
@@ -25,7 +25,9 @@ export default function Page() {
         <section>
           <Card>
             <CardHeader>
-              <CardDescription>{cv.description}</CardDescription>
+              <CardDescription className="text-fg-2">
+                {cv.description}
+              </CardDescription>
             </CardHeader>
           </Card>
         </section>
