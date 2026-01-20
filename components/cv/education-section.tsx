@@ -11,7 +11,7 @@ export function EducationSection({
   }[];
 }) {
   return (
-    <CardContent className="gap-sm">
+    <CardContent className="gap-xs">
       {content.map((c) => (
         <Timeline date={c.date} key={c.title}>
           {c.title} — {c.description}

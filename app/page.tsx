@@ -21,10 +21,10 @@ export default function Page() {
 
       <div className="h-1 border-b" />
 
-      <main className="flex flex-col gap-lg">
+      <main className="mt-0 flex flex-col gap-md">
         <section>
           <Card>
-            <CardHeader className="flex flex-col gap-md">
+            <CardHeader>
               <CardDescription>{cv.description}</CardDescription>
             </CardHeader>
           </Card>

@@ -21,18 +21,18 @@ export function WorkExperienceSection({
   return (
     <CardContent>
       {content.map((c) => (
-        <div className="flex flex-col gap-md" key={c.workplace}>
+        <div className="flex flex-col gap-xs" key={c.workplace}>
           <Timeline date={c.date}>
             {c.workplace} — {c.designation}
           </Timeline>
 
-          <ul className="flex list-disc flex-col gap-md pl-4 marker:text-brand">
+          <ul className="flex list-disc flex-col gap-xs pl-4 marker:text-brand">
             {c.projects.map((p) => (
               <li className="break-inside-avoid" key={p.name}>
                 <div className="flex flex-col gap-xs">
                   <div>
                     <h6 className="font-medium">{p.name}</h6>
-                    <p className="max-w-11/12 text-fg-2">{p.description}</p>
+                    <p className="max-w-11/12">{p.description}</p>
                   </div>
                   <ul className="flex flex-col gap-xs">
                     {p.points.map((point) => (

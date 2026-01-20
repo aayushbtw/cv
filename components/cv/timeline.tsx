@@ -8,7 +8,7 @@ export function Timeline({
   return (
     <div className="flex justify-between">
       <span className="inline-flex font-medium">{children}</span>
-      <span className="inline-flex text-fg-2">{date}</span>
+      <span className="inline-flex">{date}</span>
     </div>
   );
 }

@@ -14,13 +14,13 @@ export function ProjectsSection({
 }) {
   return (
     <CardContent>
-      <ul className="flex list-disc flex-col gap-md pl-4 marker:text-brand">
+      <ul className="flex list-disc flex-col gap-xs pl-4 marker:text-brand">
         {content.map((c) => (
           <li className="break-inside-avoid" key={c.title}>
             <div className="flex flex-col gap-xs">
               <div>
                 <Timeline date={c.date}>{c.title}</Timeline>
-                <p className="max-w-11/12 text-fg-2">{c.description}</p>
+                <p className="max-w-11/12">{c.description}</p>
               </div>
 
               <ul className="flex gap-sm">
