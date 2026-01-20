@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
-      className={cn("flex flex-col gap-y-sm", className)}
+      className={cn("flex flex-col gap-md", className)}
       data-slot="card"
       {...props}
     />
@@ -17,7 +17,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
 function CardTitle({ className, ...props }: React.ComponentProps<"h1">) {
   return (
     <h1
-      className={cn("heading", className)}
+      className={cn("heading inline-flex items-center", className)}
       data-slot="card-title"
       {...props}
     />
@@ -37,7 +37,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<"h2">) {
 function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
-      className={cn("paragraph flex flex-col gap-y-xs", className)}
+      className={cn("flex flex-col gap-md", className)}
       data-slot="card-content"
       {...props}
     />
