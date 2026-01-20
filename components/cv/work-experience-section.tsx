@@ -26,7 +26,7 @@ export function WorkExperienceSection({
             {c.workplace} — {c.designation}
           </Timeline>
 
-          <ul className="flex list-disc flex-col gap-xs pl-4 marker:text-brand">
+          <ul className="flex list-disc flex-col gap-xs pl-4.5 marker:text-brand">
             {c.projects.map((p) => (
               <li className="break-inside-avoid" key={p.name}>
                 <div className="flex flex-col gap-xs">

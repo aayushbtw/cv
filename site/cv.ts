@@ -97,18 +97,15 @@ const education = {
     Component: EducationSection,
     content: [
       {
-        title: "Bennett University",
-        description: "BCA",
+        title: "Bennett University — BCA",
         date: "2022 — 2025",
       },
       {
-        title: "Sanskar The Co-Educational School",
-        description: "XII Commerce",
+        title: "Sanskar The Co-Educational School — XII Commerce",
         date: "2021 — 2022",
       },
       {
-        title: "Delhi Public School Rajnagar",
-        description: "X",
+        title: "Delhi Public School Rajnagar — X",
         date: "2019 — 2020",
       },
     ],
@@ -159,26 +156,18 @@ const certifications = {
     content: [
       {
         title: "Zoho Creator Certified Developer — Associate",
-        description:
-          "Certification validating proficiency in building applications using Zoho Creator and Deluge.",
         date: "Apr 2025",
       },
       {
         title: "AWS Academy Graduate — Cloud Foundations",
-        description:
-          "Completed foundational coursework covering core AWS services, cloud concepts, and basic cloud architecture.",
         date: "Nov 2023",
       },
       {
         title: "Foundations of User Experience (UX) Design",
-        description:
-          "Completed a UX fundamentals course authorized by Google and offered through Coursera.",
         date: "Oct 2023",
       },
       {
         title: "Certificate of Appreciation — Responsible Security Disclosure",
-        description:
-          "Recognized by Intel Corporation for responsibly reporting a security issue through Intel’s responsible disclosure program.",
         date: "Feb 2017",
       },
     ],

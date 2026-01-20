@@ -14,7 +14,7 @@ export function ProjectsSection({
 }) {
   return (
     <CardContent>
-      <ul className="flex list-disc flex-col gap-xs pl-4 marker:text-brand">
+      <ul className="flex list-disc flex-col gap-xs pl-4.5 marker:text-brand">
         {content.map((c) => (
           <li className="break-inside-avoid" key={c.title}>
             <div className="flex flex-col gap-xs">
