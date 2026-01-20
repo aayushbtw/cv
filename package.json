@@ -7,13 +7,9 @@
     "build": "next build",
     "start": "next start",
     "fix": "ultracite fix",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "gen": "playwright test tests/pdf.spec.ts"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.14.4",
     "@tabler/icons-react": "^3.36.1",
     "@tailwindcss/typography": "^0.5.19",
     "clsx": "^2.1.1",
@@ -31,7 +27,6 @@
     "@types/react-dom": "19.2.3",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
-    "ultracite": "7.0.11",
-    "wrangler": "^4.54.0"
+    "ultracite": "7.0.11"
   }
 }
