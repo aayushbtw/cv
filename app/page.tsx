@@ -6,7 +6,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cv } from "@/site/cv";
-import { socials } from "@/site/socials";
 
 export default function Page() {
   return (
@@ -51,7 +50,7 @@ export default function Page() {
       <div className="h-1 border-b" />
 
       <footer className="flex gap-md">
-        {socials.map((s) => (
+        {cv.socials.map((s) => (
           <a
             className="link inline-flex items-center gap-xs font-medium underline-offset-4"
             href={s.url}

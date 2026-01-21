@@ -180,5 +180,15 @@ export const cv = {
   designation: "Full-Stack Engineer",
   description:
     "Self-taught programmer and explorer with a deep fascination for web technologies and security. I build tools and systems that feel simple, useful, and reliable, with thoughtful attention to clarity and user experience.",
+  socials: [
+    {
+      platform: "GitHub",
+      url: "https://github.com/aayushbtw",
+    },
+    {
+      platform: "LinkedIn",
+      url: "https://www.linkedin.com/in/aayush-me/",
+    },
+  ],
   sections: [skills, workExp, projects, education, certifications],
 };
