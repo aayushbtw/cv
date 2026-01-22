@@ -1,6 +1,7 @@
 import { IconArrowRight } from "@tabler/icons-react";
 import { Badge } from "@/components/ui/badge";
 import { CardContent } from "@/components/ui/card";
+import { parseText } from "@/lib/parse-text";
 import { Timeline } from "./timeline";
 
 export function WorkExperienceSection({
@@ -44,7 +45,7 @@ export function WorkExperienceSection({
                         key={point}
                       >
                         <IconArrowRight className="size-4.5 shrink-0 translate-y-0.5 text-fg-2" />
-                        <span>{point}</span>
+                        <span>{parseText(point)}</span>
                       </li>
                     ))}
                   </ul>
