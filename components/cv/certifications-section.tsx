@@ -13,7 +13,7 @@ export function CertificationsSection({
     <CardContent className="gap-xs">
       {content.map((c) => (
         <Timeline className="text-sm" date={c.date} key={c.title}>
-          {c.title}
+          <span className="text-fg-3">{c.title}</span>
         </Timeline>
       ))}
     </CardContent>
